@@ -6,4 +6,19 @@ class profiles::base {
   
   realize Package[$basepackages]
 
+  group { 'dave':
+    gid => '652900',
+  }
+
+
+  user { 'dave':
+    gid  => '652900',
+    home => '/home/dave',
+    managehome => 'true',
+    shell      => '/bin/bash',
+    uid        => '652900',
+    require    => Group['dave'],
+  }
+
+
 }
