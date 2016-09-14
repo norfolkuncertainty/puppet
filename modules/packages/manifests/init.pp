@@ -8,5 +8,6 @@ class packages {
   @package { 'vim': ensure => installed } 
   @package { 'sudo': ensure => installed } 
   @package { 'screen': ensure => installed }
+  @package { 'mlocate': ensure => installed }
 
 }
