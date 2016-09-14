@@ -1,6 +1,5 @@
 class packages {
 
-  @package { 'dnsutils': ensure => installed } 
   @package { 'net-tools': ensure => installed } 
   @package { 'rsync': ensure => installed } 
   @package { 'sysstat': ensure => installed } 
