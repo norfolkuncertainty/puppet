@@ -2,7 +2,7 @@ class profiles::desktop {
 
   $desktoppackages=[ 'fluxbox', 'lxdm', ]
   
-  package { $desktoppackages }:
+  package { $desktoppackages:
     ensure => present,
   }
 
