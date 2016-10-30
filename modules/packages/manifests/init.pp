@@ -9,5 +9,6 @@ class packages {
   @package { 'sudo': ensure => installed } 
   @package { 'screen': ensure => installed }
   @package { 'mlocate': ensure => installed }
+  @package { 'xf86-video-intel': ensure => installed }
 
 }
